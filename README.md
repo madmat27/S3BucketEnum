@@ -74,7 +74,7 @@ pip install -r requirements.txt
 ```
 
 ### Execute the program: 
-(Unix/Linux/MacOS): First need to change the file to executable with this command: 
+(Linux/Unix/MacOS): First need to change the file to executable with this command: 
 ```
 chmod +x S3BucketEnum.py
 ```
@@ -96,6 +96,12 @@ python3 S3BucketEnum.py /Users/mat/Desktop/names50.txt
 ```
 
 ### Print help file:
+```commandline
+user@ubuntu:$ ./S3BucketEnum.py -h (Linux/Unix/MacOS)
+C:\ python3 S3BucketEnum.py -h (Windows)
+
+```
+
 ```commandline
 
 ./S3BucketEnum.py -h
@@ -122,9 +128,6 @@ options:
 Feel free to pass the code!
 
 ```
-
-
-
 
 ### Deactivate the virtual environment when finished (optional):
 Run this command in your terminal:
