@@ -48,7 +48,7 @@ also includes the 'requirements.txt' file which contains the module dependencies
 work properly. Last (but not least!) this README file, which contains detailed instructions for installation and usage.
 
 ## Should I install anything on my computer for this to work?
-Well, the program is writen in python, so python is mandatory! You can find instructions how to install python on your pc 
+Well, the program is written in python, so python is mandatory! You can find instructions how to install python on your pc 
 (according to your operating system), so I will skip this part.
 Please note that program is developed and tested in python --version 3.10.5, so use this version (or higher). 
 Feel free to test it in lower versions, but might not work as expected. 
@@ -86,8 +86,7 @@ Example:
 ./S3BucketEnum.py /Users/mat/Desktop/names50.txt
 ```
 
-(Windows): Execute with the following command:
-Then in terminal run the following code 
+(Windows): Execute with the following command in command prompt:
 >python3 S3BucketEnum.py [path-to-wordlist-file]: 
 
 Example:
