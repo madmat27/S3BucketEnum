@@ -3,6 +3,45 @@
 This is a tool developed for my thesis "Security in Cloud Systems". (Aristotle University of Thessaloniki - MSc in 
 Communication Networks and Systems Security - Issue date: 2023)
 
+```commandline
+
+CyberSec:S3BucketEnum mat$ source venv/bin/activate
+(venv) CyberSec:S3BucketEnum mat$ ./S3BucketEnum.py /Users/mat/Desktop/names1000.txt 
+                                                                                
+   __________ ____             __        __  ______                             
+  / ___/__  // __ )__  _______/ /_____  / /_/ ____/___  __  ______ ___          
+  \__ \ /_ </ __  / / / / ___/ //_/ _ \/ __/ __/ / __ \/ / / / __ `__ \         
+ ___/ /__/ / /_/ / /_/ / /__/ ,< /  __/ /_/ /___/ / / / /_/ / / / / / /         
+/____/____/_____/\__,_/\___/_/|_|\___/\__/_____/_/ /_/\__,_/_/ /_/ /_/          
+                                                                                
+  AWS S3 Bucket Enumerator                                                      
+  Mariana S. Mazi @madmat27                                                     
+                                                                                
+{'wlist': '/Users/mat/Desktop/names1000.txt'}
+Loading…: 100%|████████████████████████| 1000/1000 [11:44<00:00,  1.42it/s]
++---------------------------------------+------------------------------------------+
+|                  URL                  |                  STATUS                  |
++---------------------------------------+------------------------------------------+
+|    https://aaron.s3.amazonaws.com/    |       Bucket exists and is private       |
+|    https://abdul.s3.amazonaws.com/    |       Bucket exists and is private       |
+|     https://abe.s3.amazonaws.com/     |       Bucket exists and is private       |
+|     https://abel.s3.amazonaws.com/    |       Bucket exists and is private       |
+|   https://abraham.s3.amazonaws.com/   |       Bucket exists and is private       |
+|     https://adam.s3.amazonaws.com/    |       Bucket exists and is private       |
+|     https://adan.s3.amazonaws.com/    |       Bucket exists and is private       |
+|    https://adolfo.s3.amazonaws.com/   |       Bucket exists and is private       |
+|    https://adolph.s3.amazonaws.com/   |          Bucket doesn't exist.           |
+|    https://adrian.s3.amazonaws.com/   |       Bucket exists and is private       |
+|   https://agustin.s3.amazonaws.com/   |       Bucket exists and is private       |
+|    https://ahmad.s3.amazonaws.com/    |       Bucket exists and is private       |
+|    https://ahmed.s3.amazonaws.com/    |       Bucket exists and is private       |
+|      https://al.s3.amazonaws.com/     |      Bucket is public and listable!      |
+|     https://alan.s3.amazonaws.com/    |       Bucket exists and is private       |
+|    https://albert.s3.amazonaws.com/   |       Bucket exists and is private       |
+|   https://alberto.s3.amazonaws.com/   | Bucket exist and all access is disabled. |
+
+```
+
 ## What's in this repo?
 The tool that enumerates Amazon S3 Buckets to find whether they are private or public, for further exploitation. Repo 
 also includes the 'requirements.txt' file which contains the module dependencies and should be imported for the tool to 
@@ -58,8 +97,34 @@ python3 S3BucketEnum.py /Users/mat/Desktop/names50.txt
 
 ### Print help file:
 ```commandline
+
 ./S3BucketEnum.py -h
+                                                                                
+   __________ ____             __        __  ______                             
+  / ___/__  // __ )__  _______/ /_____  / /_/ ____/___  __  ______ ___          
+  \__ \ /_ </ __  / / / / ___/ //_/ _ \/ __/ __/ / __ \/ / / / __ `__ \         
+ ___/ /__/ / /_/ / /_/ / /__/ ,< /  __/ /_/ /___/ / / / /_/ / / / / / /         
+/____/____/_____/\__,_/\___/_/|_|\___/\__/_____/_/ /_/\__,_/_/ /_/ /_/          
+                                                                                
+  AWS S3 Bucket Enumerator                                                      
+  Mariana S. Mazi @madmat27                                                     
+                                                                                
+usage: S3BucketEnum [-h] wlist
+
+AWS S3 Bucket Enumerator
+
+positional arguments:
+  wlist       Specify a wordlist to be used to enumerate S3 buckets
+
+options:
+  -h, --help  show this help message and exit
+
+Feel free to pass the code!
+
 ```
+
+
+
 
 ### Deactivate the virtual environment when finished (optional):
 Run this command in your terminal:
