@@ -48,17 +48,17 @@ also includes the 'requirements.txt' file which contains the module dependencies
 work properly. Last (but not least!) this README file, which contains detailed instructions for installation and usage.
 
 ## Should I install anything on my computer for this to work?
-Well, the program is writen in python, so python is mandatory for the tool to work! You can find instructions how to 
-install python in your pc (according to your operating system), so I will skip this part.
+Well, the program is writen in python, so python is mandatory! You can find instructions how to install python on your pc 
+(according to your operating system), so I will skip this part.
 Please note that program is developed and tested in python --version 3.10.5, so use this version (or higher). 
 Feel free to test it in lower versions, but might not work as expected. 
 
 ## How can I use this software?
-It requires some actions prior to running this program. This is a step-by-step installation, so feel free to skip any 
+Some actions are required prior to running this program. This is a step-by-step installation, so feel free to skip any 
 part you already know.
 
 ### Download: 
-Open a terminal, navigate to the folder that you want to save the file and run the following command: 
+Open a terminal, navigate to the folder that you want to save the file and run the following command (git should be installed): 
 ```
 git clone https://github.com/madmat27/S3BucketEnum.git
 ```
@@ -79,7 +79,7 @@ pip install -r requirements.txt
 chmod +x S3BucketEnum.py
 ```
 Then in terminal run the following code 
->./S3BucketEnum.py <path-to-wordlist-file>: 
+>./S3BucketEnum.py [path-to-wordlist-file]: 
 
 Example: 
 ```commandline
@@ -88,11 +88,11 @@ Example:
 
 (Windows): Execute with the following command:
 Then in terminal run the following code 
->python3 S3BucketEnum.py <path-to-wordlist-file>: 
+>python3 S3BucketEnum.py [path-to-wordlist-file]: 
 
 Example:
 ```commandline
-python3 S3BucketEnum.py /Users/mat/Desktop/names50.txt
+python3 S3BucketEnum.py C:\Users\mat\Desktop\names50.txt
 ```
 
 ### Print help file:
@@ -103,8 +103,6 @@ C:\ python3 S3BucketEnum.py -h (Windows)
 ```
 
 ```commandline
-
-./S3BucketEnum.py -h
                                                                                 
    __________ ____             __        __  ______                             
   / ___/__  // __ )__  _______/ /_____  / /_/ ____/___  __  ______ ___          
